@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-ssr/
+.env
+.env.*
+!.env.example
+*.log
+*.pyc
+__pycache__/
+.pytest_cache/
+.DS_Store
+.wrangler/
+coverage/
+*.tsbuildinfo

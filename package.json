@@ -1,0 +1,39 @@
+{
+  "name": "soumit",
+  "version": "1.1.0",
+  "description": "Soumit (soumit.ma) — Morocco's Public Procurement & Tender Intelligence Engine by Vext. OpenAPI 3.1 contract, SDKs, and Model Context Protocol (MCP) server under Moroccan Procurement Décret n° 2-22-431.",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js packages/*/test/*.test.js",
+    "test:api": "node --test packages/soumit-api/test/index.test.js",
+    "test:mcp": "node --test packages/soumit-mcp/test/index.test.js",
+    "validate:contract": "node -e \"const fs=require('fs'); const spec=JSON.parse(fs.readFileSync('openapi.json','utf8')); console.log('OpenAPI 3.1 endpoints:', Object.keys(spec.paths).length);\""
+  },
+  "keywords": [
+    "soumit",
+    "morocco",
+    "procurement",
+    "tenders",
+    "appels-d-offres",
+    "marches-publics",
+    "decret-2-22-431",
+    "mcp",
+    "model-context-protocol",
+    "sdk",
+    "vext"
+  ],
+  "author": "Vext AI <abdel@envoisms.ma> (https://vext.ma)",
+  "license": "MIT",
+  "homepage": "https://soumit.ma",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vext-ma/soumit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vext-ma/soumit/issues"
+  }
+}

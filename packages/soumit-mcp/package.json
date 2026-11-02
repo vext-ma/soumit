@@ -1,0 +1,38 @@
+{
+  "name": "@vext-ma/soumit-mcp",
+  "version": "1.1.0",
+  "type": "module",
+  "description": "Official Model Context Protocol (MCP) server for Soumit (https://soumit.ma) — Moroccan Public Procurement Intelligence for Claude Desktop, Cursor, and Autonomous AI Agents (Décret n° 2-22-431)",
+  "main": "dist/index.js",
+  "bin": {
+    "soumit-mcp": "./bin/soumit-mcp.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vext-ma/soumit-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "ai-agent",
+    "soumit",
+    "marches-publics",
+    "morocco",
+    "decret-2-22-431",
+    "tenders",
+    "vext"
+  ],
+  "author": "VEXT AI <contact@vext.ma> (https://vext.ma)",
+  "license": "MIT"
+}
